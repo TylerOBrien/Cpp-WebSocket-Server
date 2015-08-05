@@ -29,8 +29,8 @@ public:
         std::cout << client << " sent: " << data << std::endl;
     }
 
-    void reject(const wss::Socket& client, const std::string& origin) {}
-    void error(const wss::Socket& client, int errtype, const boost::system::error_code& errcode) {}
+    void reject(const wss::Socket&, const std::string&) {}
+    void error(const wss::Socket&, int, const boost::system::error_code&) {}
 };
 
 int main() {
