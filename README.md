@@ -15,14 +15,14 @@ public:
         __clients.push_back(client);
 
         std::cout << client << " connected" << std::endl;
-        std::cout << "Number of clients: " << __clients.size() << std::endl << std::endl;
+        std::cout << "Number of clients: " << __clients.size() << std::endl;
     }
 
     void close(const wss::Socket& client) {
         __clients.remove(client);
 
         std::cout << client << " dropped" << std::endl;
-        std::cout << "Number of clients: " << __clients.size() << std::endl << std::endl;
+        std::cout << "Number of clients: " << __clients.size() << std::endl;
     }
 
     void read(const wss::Socket& client, const std::string& data) {
