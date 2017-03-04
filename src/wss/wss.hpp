@@ -41,9 +41,11 @@ Add set_onaccept() function. Calls when socket first connects, right afer handsh
 
 namespace wss {
 
-enum error {
-    ACCEPT=-1, READ=-2, SEND=-3
-};
+namespace error {
+    enum {
+        ACCEPT=-1, READ=-2, SEND=-3
+    };
+}
 
 struct EventHandler {
     virtual void open(
