@@ -54,17 +54,23 @@ typedef base64_from_binary<transform_width<const char*,6,8>> base64_encode_t;
  * * Identifiers
  * * * * * * * * * * * * * * * * * * */
 
-enum event {
-    CONNECT_REQUEST=1, CONNECT_ACCEPTED, FRAME_HEAD, FRAME_126, FRAME_127, PAYLOAD
-};
+namespace event {
+    enum {
+        CONNECT_REQUEST=1, CONNECT_ACCEPTED, FRAME_HEAD, FRAME_126, FRAME_127, PAYLOAD
+    };
+}
 
-enum nbytes {
-    FRAME=2, MASK=4, PAYLOAD_LENGTH=7, PAYLOAD_LENGTH_EXT_126=2, PAYLOAD_LENGTH_EXT_127=8
-};
+namespace nbytes {
+    enum {
+        FRAME=2, MASK=4, PAYLOAD_LENGTH=7, PAYLOAD_LENGTH_EXT_126=2, PAYLOAD_LENGTH_EXT_127=8
+    };
+}
 
-enum opcode {
-    CONTINUATION=0, TEXT=1, BINARY=2, CLOSE=8, PING=9, PONG=10
-};
+namespace opcode {
+    enum {
+        CONTINUATION=0, TEXT=1, BINARY=2, CLOSE=8, PING=9, PONG=10
+    };
+}
 
 /* * * * * * * * * * * * * * * * * * *
  * * Empty Functions
