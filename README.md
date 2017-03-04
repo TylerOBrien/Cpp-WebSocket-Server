@@ -6,7 +6,9 @@ Example
 ----------
 ```cpp
 #include "wss/wss.hpp"
+
 #include <iostream>
+#include <list>
 
 class Handler : public wss::EventHandler {
 private:
