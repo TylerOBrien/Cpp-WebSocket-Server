@@ -1,5 +1,5 @@
 # WebSocket Server
-This API was created with several Boost libraries, most notably Boost ASIO. It is designed for managing network input and output via the WebSocket Protocol RFC6455. The handling of events was kept as an asyncrhonous API as that is what the Boost ASIO library requires and WSS is essentially a lightweight wrapper around Boost ASIO.
+Framework built using Boost's ASIO library that provides a basic event loop for managing connections over the WebSocket protocol.
 
 # Example
 ```cpp
