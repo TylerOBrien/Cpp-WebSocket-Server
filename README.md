@@ -1,5 +1,5 @@
 # WebSocket Server
-Framework built using Boost's ASIO library that provides a basic event loop for managing connections over the WebSocket protocol.
+Framework built ontop of [EasySockets](https://github.com/TylerOBrien/EasySockets) that provides a basic event loop for managing connections over the WebSocket protocol.
 
 # Example
 ```cpp
